@@ -26,9 +26,28 @@ function App() {
             </div>
           </Route>
           <Route path='/'>
-            <div className="app__mainpage">
+            <div className="app__mainpage ">
               <SideBar />
+              <div className="app__mainpage  flex-videos">
               <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              <RecommendedVideos />
+              </div>
             </div>
           </Route>
           

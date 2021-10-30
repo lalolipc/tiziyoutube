@@ -12,3 +12,10 @@ a {
   width: 50%;
   margin: auto;
 }
+.flex-videos{
+  flex-wrap: wrap
+}
+.slide-colum{
+  flex-direction: column;
+
+}

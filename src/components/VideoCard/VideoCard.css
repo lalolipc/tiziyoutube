@@ -9,7 +9,7 @@
 }
 
 .videocard__info {
-    display: flex;
+    /* display: flex; */
     margin-top: 10px;
     padding-right: 30px;
 }
@@ -31,10 +31,41 @@
 .videocard__avatar {
     height: 30px !important;
     width: 30px !important;
+    /* z-index: 0; */
+    position: relative;
+
 }
 
 
 
 .videocard__text > * {
     margin: 1px;
+}
+.modal-fixed{
+    position:fixed;
+    top:10%;
+    left:15%;
+    height: 70vh;
+    width: 130vh ;
+    align-items: center;
+    background-color: #00000098;
+    /* z-index: auto; */
+    /* h-screen w-screen items-center index bg-transparent-black */
+}
+
+.video-90vw
+{
+  display: inline-block;
+  height: 70vh; /*THis will set height equal to the height of windows*/
+  width: 70vw/*This will set width equal to width of windows*/
+  
+}
+.modal-absolute {
+    position: absolute;
+    z-index: 40;
+
+}
+.general-position{
+    position: absolute;
+
 }

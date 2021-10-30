@@ -13,7 +13,7 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 
 const SideBar = () => {
     return (
-        <div className='sidebar'>
+        <div className='sidebar '>
             <SideBarRow selected Icon={HomeIcon} title='Home' />
             <SideBarRow Icon={WhatshotIcon} title='Trending' />
             <SideBarRow Icon={SubscriptionsIcon} title='Subscription' />
