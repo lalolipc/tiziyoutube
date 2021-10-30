@@ -18,7 +18,9 @@ const VideoCard = ({ image, title, channel, views, timestamp, channelImage, url 
             
             <div role="switch" aria-checked={"true"} tabIndex={0} onClick={() => setShow(false)} onKeyPress={() => setShow(false)} className={`grid h-full flex-row justify-center items-center md:mt-24 xs:p-5 xs:mt-28 text-white ${show ? "dg-fadeInFromTop" : "dg-fadeOutFromTop"}`}>
               <div style={{ borderRadius: 15 }} onClick={e => e.stopPropagation()} role="switch" aria-checked={"true"} tabIndex={0} onKeyPress={e => e.stopPropagation()} className="relative bg-x28-black w-90vw h-40vh sm:w-80vw sm:h-70 md:w-60vw md:h-70 text-center grid place-content-center mb-3/4 ">
-                <div className="text-white modal-absolute right-0 pt-2 pr-2"><button onClick={() => setShow(false)} ><div className="h-5 w-5">x</div></button></div>
+                <div className="text-white modal-absolute right-0 pt-2 pr-2"><button onClick={() => setShow(false)} ><div className="h-5 w-5">
+                  x
+                  </div></button></div>
                 <div className="video-90vw h-40vh sm:w-80vw sm:h-70 md:w-60vw md:h-70">
                 <iframe style={{ width: "100%", height: "100%" }} className="rounded-15px" src={urlVideo} title="YouTube video player"  sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-Origin allow-top-navigation" allowFullScreen ></iframe>
                 </div>

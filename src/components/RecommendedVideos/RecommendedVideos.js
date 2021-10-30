@@ -8,7 +8,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Alert from '@material-ui/lab/Alert';
 
 
-const RecommendedVideos = () => {
+const RecommendedVideos = ({  url, title, views, timestamp,image, channelImage, channel}) => {
 
   const [videoCards, setVideoCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -67,13 +67,13 @@ const RecommendedVideos = () => {
         {
 
           <VideoCard
-            title="Abc Alphabet "
-            views="Learn"
-            timestamp=""
-            image="https://i.ytimg.com/vi/eegWzglBMh0/sddefault.jpg"
-            channelImage="https://i.ytimg.com/vi/eegWzglBMh0/sddefault.jpg"
-            channel="English"
-            url="https://www.youtube.com/embed/eegWzglBMh0"
+            title={title}
+            views={views}
+            timestamp={timestamp}
+            image={image}
+            channelImage={channelImage}
+            channel={channel}
+            url={url}
           />
           
           // )
