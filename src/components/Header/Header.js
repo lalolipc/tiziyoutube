@@ -8,14 +8,15 @@ import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Avatar from '@material-ui/core/Avatar';
 
-function Header () {
+function Header ({onClick}) {
 
     const [inputSearch, setInputSearch] = useState('');
 
     return (
         <div className='header'>
           <div className="header__left">
-            <MenuIcon />
+            <button className="border-none-boton" onClick={()=>onClick()}><MenuIcon/></button>
+            
             <Link to='/'>
               <img 
                 className='header__logo'

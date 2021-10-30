@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import SideBar from './components/SideBar/SideBar';
@@ -8,6 +8,8 @@ import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
+  const [widthView, setWidthView] = useState(0)
+  const [showSideBar, setShowSideBar] = useState(false)
 const data=[
 {
   url:"https://www.youtube.com/embed/eegWzglBMh0",
@@ -74,10 +76,19 @@ const data=[
 }
 
 ]
-  return (
+useEffect(() => {
+  setWidthView(window.innerWidth)
+
+  
+}, [])
+const openSideBar=()=>{
+  setShowSideBar(!showSideBar)
+}
+return (
     <div className="App">
       <Router>
-      <Header />
+      <Header
+      onClick={()=>openSideBar()} />
         <Switch>
           <Route path='/video/:videoId'>
             <div className="app__mainpage">
@@ -92,7 +103,11 @@ const data=[
           </Route>
           <Route path='/'>
             <div className="app__mainpage ">
+            {widthView > 540 || showSideBar ?
               <SideBar />
+              :
+              <div></div>
+              }
               <div className="app__mainpage  flex-videos">
                { data.map((videos,index )=>(
               <RecommendedVideos

@@ -25,7 +25,7 @@
 
 .videocard__text > p {
     font-size: 14px;
-    color: gray;
+    /* color: gray; */
 }
 
 .videocard__avatar {
@@ -57,7 +57,27 @@
 {
   display: inline-block;
   height: 70vh; /*THis will set height equal to the height of windows*/
-  width: 70vw/*This will set width equal to width of windows*/
+  width: 130vh/*This will set width equal to width of windows*/
+  
+}
+
+.modal-fixed-mobile{
+    position:fixed;
+    top:10%;
+    left:1%;
+    height: 60vh;
+    width: 40vh ;
+    align-items: center;
+    background-color: #00000098;
+    /* z-index: auto; */
+    /* h-screen w-screen items-center index bg-transparent-black */
+}
+
+.video-90vw-mobile
+{
+  display: inline-block;
+  height: 60vh; /*THis will set height equal to the height of windows*/
+  width: 45vh/*This will set width equal to width of windows*/
   
 }
 .modal-absolute {
@@ -68,4 +88,8 @@
 .general-position{
     position: absolute;
 
+}
+.size-close-modal{
+   height: 30px;
+   width: 30px;
 }
