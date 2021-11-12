@@ -6,9 +6,11 @@ const VideoCard = ({ image, title, channel, views, timestamp, channelImage, url 
   const [urlVideo, setUrlVideo] = useState(null)
   const [show, setShow] = useState(false)
   const [widthView, setWidthView] = useState(0)
-
-  const openModal = (url) => {
-    setUrlVideo(url)
+  const resultIni= url.split("watch?v=")
+  const res=resultIni[0]+'embed/'+resultIni[1]
+  const openModal = (res) => {
+    
+    setUrlVideo(res)
     setShow(true)
   }
   useEffect(() => {
@@ -58,7 +60,7 @@ const VideoCard = ({ image, title, channel, views, timestamp, channelImage, url 
 </div>
 }
       <div className='videocard'>
-        <button onClick={() => openModal(url)} className="block ml-auto">
+        <button onClick={() => openModal(res)} className="block ml-auto">
 
           <img className='videocard__image' src={image} alt='' />
         </button>

@@ -14,15 +14,17 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 const SideBar = () => {
     return (
         <div className='sidebar '>
-            <SideBarRow selected Icon={HomeIcon} title='Home' />
-            <SideBarRow Icon={WhatshotIcon} title='Trending' />
-            <SideBarRow Icon={SubscriptionsIcon} title='Subscription' />
+            <SideBarRow url="https://2.bp.blogspot.com/-Tsm4oXVoYik/XEzeCFRjQ1I/AAAAAAAAHIM/VqxZ-hbI2Qcaq6llAHzGTX56jC7bmrkAwCK4BGAYYCw/s640/Flag%2BUnited%2BStates.png" Icon={HistoryIcon} title='English' />
+            <SideBarRow selected url="https://4.bp.blogspot.com/-ESGFmY9BLNE/XEysE63C_tI/AAAAAAAAHEc/svSz8ScwXXQc-Qph_591KVteI4cq52xdACK4BGAYYCw/s1600/Argentina%2BFlag.png" Icon={HomeIcon} title='Spanish' />            
+            {/* <img className='header__logo' src="https://4.bp.blogspot.com/-ESGFmY9BLNE/XEysE63C_tI/AAAAAAAAHEc/svSz8ScwXXQc-Qph_591KVteI4cq52xdACK4BGAYYCw/s1600/Argentina%2BFlag.png" alt=""></img> */}
+            <SideBarRow url="https://cdn.countryflags.com/thumbs/china/flag-round-250.png" Icon={WhatshotIcon} title='Chinese' />
+            <SideBarRow url="https://cdn.countryflags.com/thumbs/russia/flag-3d-round-250.png" Icon={SubscriptionsIcon} title='Russian' />
             <hr />
-            <SideBarRow Icon={VideoLibraryIcon} title='Library' />
-            <SideBarRow Icon={HistoryIcon} title='History' />
-            <SideBarRow Icon={OndemandVideoIcon} title='Your videos' />
-            <SideBarRow Icon={WatchLaterIcon} title='Watch later' />
-            <SideBarRow Icon={ThumbUpIcon} title='Liked vides' />
+            <SideBarRow url="https://2.bp.blogspot.com/-q0OooaMxa2I/XENAwabjSOI/AAAAAAAAG-g/mlQ1wpfbudQwFvseYYXfD_8Ox1UkukY6wCK4BGAYYCw/s640/France%2BFlag.png" Icon={VideoLibraryIcon} title='French' />
+            <SideBarRow url="https://2.bp.blogspot.com/-Tsm4oXVoYik/XEzeCFRjQ1I/AAAAAAAAHIM/VqxZ-hbI2Qcaq6llAHzGTX56jC7bmrkAwCK4BGAYYCw/s640/Flag%2BUnited%2BStates.png" Icon={HistoryIcon} title='English' />
+            {/*<SideBarRow url="" Icon={OndemandVideoIcon} title='Your videos' />
+            <SideBarRow url="" Icon={WatchLaterIcon} title='Watch later' />
+            <SideBarRow url="" Icon={ThumbUpIcon} title='Liked vides' /> */}
             <hr />
         </div>
     )
