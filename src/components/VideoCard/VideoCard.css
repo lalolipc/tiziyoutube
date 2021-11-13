@@ -64,10 +64,12 @@
 .modal-fixed-mobile{
     position:fixed;
     top:10%;
-    left:1%;
+    /* left:1%;  */
+  
     height: 60vh;
-    width: 40vh ;
-    align-items: center;
+    width: 65vh ;
+    /* align-self: center; */
+    margin-right: 12px;
     background-color: #00000098;
     /* z-index: auto; */
     /* h-screen w-screen items-center index bg-transparent-black */
@@ -77,7 +79,7 @@
 {
   display: inline-block;
   height: 60vh; /*THis will set height equal to the height of windows*/
-  width: 45vh/*This will set width equal to width of windows*/
+  width: 65vh/*This will set width equal to width of windows*/
   
 }
 .modal-absolute {
