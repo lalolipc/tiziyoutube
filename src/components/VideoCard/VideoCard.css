@@ -58,29 +58,32 @@
   display: inline-block;
   height: 70vh; /*THis will set height equal to the height of windows*/
   width: 130vh/*This will set width equal to width of windows*/
-  
+
 }
 
 .modal-fixed-mobile{
     position:fixed;
-    top:10%;
-    /* left:1%;  */
-  
+    top:12%;
+    left:1%;
+
     height: 60vh;
-    width: 65vh ;
+    width: 51vh ;
     /* align-self: center; */
     margin-right: 12px;
     background-color: #00000098;
     /* z-index: auto; */
     /* h-screen w-screen items-center index bg-transparent-black */
+    /* padding-top: 12px; */
+
 }
 
 .video-90vw-mobile
 {
   display: inline-block;
   height: 60vh; /*THis will set height equal to the height of windows*/
-  width: 65vh/*This will set width equal to width of windows*/
-  
+  width: 51vh;/*This will set width equal to width of windows*/
+  /* padding-top: 12px; */
+
 }
 .modal-absolute {
     position: absolute;
