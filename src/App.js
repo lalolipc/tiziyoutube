@@ -163,7 +163,7 @@ return (
               <div></div>
               }
               <div className="app__mainpage  flex-videos">
-               { data.map((videos,index )=>(
+               {/* { data.map((videos,index )=>(
               <RecommendedVideos
               url={videos.url}
               title={videos.title}
@@ -173,8 +173,9 @@ return (
               channelImage={videos.channelImage}
               channel={videos.channel}
               />
-               ))
-              }
+               )) 
+              }*/}
+               <RecommendedVideos />
               {/* <RecommendedVideos />
               <RecommendedVideos />
               <RecommendedVideos />

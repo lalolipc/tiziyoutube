@@ -18,3 +18,6 @@
 .recommendedvideos__videos > * {
     margin-left: 5%;
 }
+.pointer {
+	cursor: pointer;
+}

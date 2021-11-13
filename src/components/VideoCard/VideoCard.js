@@ -59,10 +59,10 @@ const VideoCard = ({ image, title, channel, views, timestamp, channelImage, url 
   </div>
 </div>
 }
-      <div className='videocard'>
+      <div className='videocard pointer'>
         <button onClick={() => openModal(res)} className="block ml-auto">
 
-          <img className='videocard__image' src={image} alt='' />
+          <img className='videocard__image pointer' src={image} alt='' />
         </button>
         <div className="videocard__info">
           {/* <Avatar
@@ -82,3 +82,30 @@ const VideoCard = ({ image, title, channel, views, timestamp, channelImage, url 
 }
 
 export default VideoCard;
+
+
+// import React from 'react';
+// import Avatar from '@material-ui/core/Avatar';
+// import './VideoCard.css';
+
+// const VideoCard = ({image, title, channel, views, timestamp, channelImage, url}) => {
+//     return (
+//         <div className='videocard'>
+//           <img className='videocard__image' src={image} alt='' />
+//           <div className="videocard__info">
+//             <Avatar 
+//               className='videocard__avatar' 
+//               alt={channel} 
+//               src={channelImage} 
+//             />
+//             <div className="videocard__text">
+//               <h4>{title}</h4>
+//               <p>{channel}</p>
+//               <p>{views} views • {timestamp}</p>
+//             </div> 
+//           </div>
+//         </div>
+//     )
+// }
+
+// export default VideoCard;
