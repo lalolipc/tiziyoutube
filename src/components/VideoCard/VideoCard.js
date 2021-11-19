@@ -33,7 +33,7 @@ const VideoCard = ({ image, title, channel, views, timestamp, channelImage, url 
                   <img src="../cancel.png" className="size-close-modal" alt=""></img>
                 </div></button></div>
                 <div className="video-90vw h-40vh sm:w-80vw sm:h-70 md:w-60vw md:h-70">
-                <iframe style={{ width: "100%", height: "100%" }} className="rounded-15px" src={urlVideo} title="YouTube video player" allow="accelerometer; autoplay;" sandbox="allow-forms allow-scripts allow-pointer-lock allow-same-Origin allow-top-navigation" allowFullScreen ></iframe>                </div>
+                <iframe style={{ width: "100%", height: "100%" }} className="rounded-15px" src={urlVideo} title="YouTube video player"  allow="accelerometer; autoplay;" embedsandbox="allow-forms allow-scripts allow-pointer-lock allow-same-Origin allow-top-navigation" allowFullScreen ></iframe>                </div>
               </div>
             </div>
           </div>
