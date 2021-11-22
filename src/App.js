@@ -157,7 +157,7 @@ function App() {
           <Route path='/search/:searchQuery'>
             <div className="app__mainpage">
               <SideBar setIdList={setIdList} />
-              <SearchPage />
+              {/* <SearchPage /> */}
             </div>
           </Route>
           <Route path='/'>

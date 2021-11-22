@@ -45,7 +45,7 @@
     position:fixed;
     top:10%;
     left:15%;
-    height: 70vh;
+    height: 67vh;
     width: 130vh ;
     align-items: center;
     background-color: #00000098;
@@ -56,7 +56,7 @@
 .video-90vw
 {
   display: inline-block;
-  height: 70vh; /*THis will set height equal to the height of windows*/
+  height: 67vh; /*THis will set height equal to the height of windows*/
   width: 130vh/*This will set width equal to width of windows*/
 
 }
