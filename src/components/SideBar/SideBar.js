@@ -2,10 +2,10 @@ import React from 'react';
 import SideBarRow from './../SideBarRow/SideBarRow';
 import './SideBar.css';
 
-const SideBar = ({ setIdList }) => {
+const SideBar = ({ setIdList, widthView }) => {
 
     return (
-        <div className='sidebar '>
+        <div className={ widthView > 540? 'sidebar': 'sidebar-mobile'}> 
             <button onClick={() => setIdList('1')}>
                 <SideBarRow url="https://2.bp.blogspot.com/-Tsm4oXVoYik/XEzeCFRjQ1I/AAAAAAAAHIM/VqxZ-hbI2Qcaq6llAHzGTX56jC7bmrkAwCK4BGAYYCw/s640/Flag%2BUnited%2BStates.png" title='English' />
             </button>

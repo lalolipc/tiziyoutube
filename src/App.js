@@ -156,14 +156,14 @@ function App() {
           </Route>
           <Route path='/search/:searchQuery'>
             <div className="app__mainpage">
-              <SideBar setIdList={setIdList} />
+              <SideBar setIdList={setIdList}  widthView={widthView} />
               {/* <SearchPage /> */}
             </div>
           </Route>
           <Route path='/'>
             <div className="app__mainpage ">
               {widthView > 540 || showSideBar ?
-                <SideBar setIdList={setIdList} />
+                <SideBar setIdList={setIdList} widthView={widthView}/>
                 :
                 <div></div>
               }
