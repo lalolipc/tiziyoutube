@@ -38,7 +38,7 @@ const RecommendedVideos = ({ idMyList, maxItems }) => {
         console.log(error);
         setIsError(true);
       })
-  }, [])
+  }, [idMyList, maxItems])
 
   useEffect(() => {
     setWidthView(window.innerWidth)
@@ -58,7 +58,7 @@ const RecommendedVideos = ({ idMyList, maxItems }) => {
       const channelImage = response.data.items[0].snippet.thumbnails.medium.url;
 
       const title = snippet.title;
-      const image = snippet.thumbnails.medium.url;
+      const image = snippet?.thumbnails?.medium?.url;
       const views = "";// video.statistics.viewCount;
       const timestamp = DateTime.fromISO(snippet.publishedAt).toRelative();
       const channel = snippet.channelTitle;
